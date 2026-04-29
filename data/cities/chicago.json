@@ -1,0 +1,83 @@
+{
+  "slug": "chicago",
+  "name": "Chicago",
+  "state": "IL",
+  "population": 2696555,
+  "lastUpdated": "2026-04-29",
+  "totalScore": 43,
+  "tier": "Mixed",
+  "categories": {
+    "airAndEnvironment": {
+      "score": 0,
+      "weight": 0.25,
+      "summary": "Annual AQI 45, 22 ozone unhealthy days/yr",
+      "inputs": {
+        "annualAQI": 45,
+        "ozoneUnhealthyDays": 22,
+        "pm25Annual": 10.1
+      }
+    },
+    "walkabilityAndNature": {
+      "score": 85,
+      "weight": 0.2,
+      "summary": "Walk Score 78, 18 nearby trails",
+      "inputs": {
+        "walkScore": 78,
+        "trailCount": 18
+      }
+    },
+    "healthyFood": {
+      "score": 38,
+      "weight": 0.15,
+      "summary": "85 farmers markets, co-ops & health food stores",
+      "inputs": {
+        "venueCount": 85,
+        "population": 2696555,
+        "per100k": 3.2
+      }
+    },
+    "movement": {
+      "score": 83,
+      "weight": 0.15,
+      "summary": "280 pilates, yoga, climbing & fitness studios",
+      "inputs": {
+        "venueCount": 280,
+        "population": 2696555,
+        "per100k": 10.4
+      }
+    },
+    "recovery": {
+      "score": 37,
+      "weight": 0.15,
+      "summary": "40 sauna, cold plunge & contrast therapy venues",
+      "inputs": {
+        "venueCount": 40,
+        "population": 2696555,
+        "per100k": 1.5
+      }
+    },
+    "longevityMedicine": {
+      "score": 20,
+      "weight": 0.1,
+      "summary": "55 functional medicine & longevity clinics",
+      "inputs": {
+        "venueCount": 55,
+        "population": 2696555,
+        "per100k": 2
+      }
+    }
+  },
+  "venueCounts": {
+    "saunaColdPlunge": 40,
+    "functionalMedicine": 55,
+    "farmersMarkets": 85,
+    "pilatesYoga": 280,
+    "healthFoodStores": 85,
+    "trailsOver2mi": 18
+  },
+  "airQuality": {
+    "annualAQI": 45,
+    "ozoneUnhealthyDays": 22,
+    "pm25Annual": 10.1
+  }
+}

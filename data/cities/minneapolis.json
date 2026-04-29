@@ -1,0 +1,83 @@
+{
+  "slug": "minneapolis",
+  "name": "Minneapolis",
+  "state": "MN",
+  "population": 429606,
+  "lastUpdated": "2026-04-29",
+  "totalScore": 66,
+  "tier": "Decent",
+  "categories": {
+    "airAndEnvironment": {
+      "score": 0,
+      "weight": 0.25,
+      "summary": "Annual AQI 40, 16 ozone unhealthy days/yr",
+      "inputs": {
+        "annualAQI": 40,
+        "ozoneUnhealthyDays": 16,
+        "pm25Annual": 8.8
+      }
+    },
+    "walkabilityAndNature": {
+      "score": 79,
+      "weight": 0.2,
+      "summary": "Walk Score 70, 20 nearby trails",
+      "inputs": {
+        "walkScore": 70,
+        "trailCount": 20
+      }
+    },
+    "healthyFood": {
+      "score": 98,
+      "weight": 0.15,
+      "summary": "35 farmers markets, co-ops & health food stores",
+      "inputs": {
+        "venueCount": 35,
+        "population": 429606,
+        "per100k": 8.1
+      }
+    },
+    "movement": {
+      "score": 100,
+      "weight": 0.15,
+      "summary": "95 pilates, yoga, climbing & fitness studios",
+      "inputs": {
+        "venueCount": 95,
+        "population": 429606,
+        "per100k": 22.1
+      }
+    },
+    "recovery": {
+      "score": 100,
+      "weight": 0.15,
+      "summary": "20 sauna, cold plunge & contrast therapy venues",
+      "inputs": {
+        "venueCount": 20,
+        "population": 429606,
+        "per100k": 4.7
+      }
+    },
+    "longevityMedicine": {
+      "score": 51,
+      "weight": 0.1,
+      "summary": "22 functional medicine & longevity clinics",
+      "inputs": {
+        "venueCount": 22,
+        "population": 429606,
+        "per100k": 5.1
+      }
+    }
+  },
+  "venueCounts": {
+    "saunaColdPlunge": 20,
+    "functionalMedicine": 22,
+    "farmersMarkets": 35,
+    "pilatesYoga": 95,
+    "healthFoodStores": 35,
+    "trailsOver2mi": 20
+  },
+  "airQuality": {
+    "annualAQI": 40,
+    "ozoneUnhealthyDays": 16,
+    "pm25Annual": 8.8
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "slug": "tampa",
+  "name": "Tampa",
+  "state": "FL",
+  "population": 403364,
+  "lastUpdated": "2026-04-29",
+  "totalScore": 63,
+  "tier": "Decent",
+  "categories": {
+    "airAndEnvironment": {
+      "score": 30,
+      "weight": 0.25,
+      "summary": "Annual AQI 35, 6 ozone unhealthy days/yr",
+      "inputs": {
+        "annualAQI": 35,
+        "ozoneUnhealthyDays": 6,
+        "pm25Annual": 7.6
+      }
+    },
+    "walkabilityAndNature": {
+      "score": 62,
+      "weight": 0.2,
+      "summary": "Walk Score 48, 12 nearby trails",
+      "inputs": {
+        "walkScore": 48,
+        "trailCount": 12
+      }
+    },
+    "healthyFood": {
+      "score": 65,
+      "weight": 0.15,
+      "summary": "22 farmers markets, co-ops & health food stores",
+      "inputs": {
+        "venueCount": 22,
+        "population": 403364,
+        "per100k": 5.5
+      }
+    },
+    "movement": {
+      "score": 100,
+      "weight": 0.15,
+      "summary": "70 pilates, yoga, climbing & fitness studios",
+      "inputs": {
+        "venueCount": 70,
+        "population": 403364,
+        "per100k": 17.4
+      }
+    },
+    "recovery": {
+      "score": 93,
+      "weight": 0.15,
+      "summary": "15 sauna, cold plunge & contrast therapy venues",
+      "inputs": {
+        "venueCount": 15,
+        "population": 403364,
+        "per100k": 3.7
+      }
+    },
+    "longevityMedicine": {
+      "score": 40,
+      "weight": 0.1,
+      "summary": "16 functional medicine & longevity clinics",
+      "inputs": {
+        "venueCount": 16,
+        "population": 403364,
+        "per100k": 4
+      }
+    }
+  },
+  "venueCounts": {
+    "saunaColdPlunge": 15,
+    "functionalMedicine": 16,
+    "farmersMarkets": 22,
+    "pilatesYoga": 70,
+    "healthFoodStores": 22,
+    "trailsOver2mi": 12
+  },
+  "airQuality": {
+    "annualAQI": 35,
+    "ozoneUnhealthyDays": 6,
+    "pm25Annual": 7.6
+  }
+}

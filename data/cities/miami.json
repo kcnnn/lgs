@@ -1,0 +1,83 @@
+{
+  "slug": "miami",
+  "name": "Miami",
+  "state": "FL",
+  "population": 442241,
+  "lastUpdated": "2026-04-29",
+  "totalScore": 73,
+  "tier": "Strong",
+  "categories": {
+    "airAndEnvironment": {
+      "score": 45,
+      "weight": 0.25,
+      "summary": "Annual AQI 33, 2 ozone unhealthy days/yr",
+      "inputs": {
+        "annualAQI": 33,
+        "ozoneUnhealthyDays": 2,
+        "pm25Annual": 7.1
+      }
+    },
+    "walkabilityAndNature": {
+      "score": 74,
+      "weight": 0.2,
+      "summary": "Walk Score 78, 8 nearby trails",
+      "inputs": {
+        "walkScore": 78,
+        "trailCount": 8
+      }
+    },
+    "healthyFood": {
+      "score": 81,
+      "weight": 0.15,
+      "summary": "30 farmers markets, co-ops & health food stores",
+      "inputs": {
+        "venueCount": 30,
+        "population": 442241,
+        "per100k": 6.8
+      }
+    },
+    "movement": {
+      "score": 100,
+      "weight": 0.15,
+      "summary": "85 pilates, yoga, climbing & fitness studios",
+      "inputs": {
+        "venueCount": 85,
+        "population": 442241,
+        "per100k": 19.2
+      }
+    },
+    "recovery": {
+      "score": 100,
+      "weight": 0.15,
+      "summary": "20 sauna, cold plunge & contrast therapy venues",
+      "inputs": {
+        "venueCount": 20,
+        "population": 442241,
+        "per100k": 4.5
+      }
+    },
+    "longevityMedicine": {
+      "score": 50,
+      "weight": 0.1,
+      "summary": "22 functional medicine & longevity clinics",
+      "inputs": {
+        "venueCount": 22,
+        "population": 442241,
+        "per100k": 5
+      }
+    }
+  },
+  "venueCounts": {
+    "saunaColdPlunge": 20,
+    "functionalMedicine": 22,
+    "farmersMarkets": 30,
+    "pilatesYoga": 85,
+    "healthFoodStores": 30,
+    "trailsOver2mi": 8
+  },
+  "airQuality": {
+    "annualAQI": 33,
+    "ozoneUnhealthyDays": 2,
+    "pm25Annual": 7.1
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "slug": "kauai",
+  "name": "Kauai",
+  "state": "HI",
+  "population": 72293,
+  "lastUpdated": "2026-04-29",
+  "totalScore": 76,
+  "tier": "Strong",
+  "categories": {
+    "airAndEnvironment": {
+      "score": 73,
+      "weight": 0.25,
+      "summary": "Annual AQI 18, 0 ozone unhealthy days/yr",
+      "inputs": {
+        "annualAQI": 18,
+        "ozoneUnhealthyDays": 0,
+        "pm25Annual": 4.2
+      }
+    },
+    "walkabilityAndNature": {
+      "score": 44,
+      "weight": 0.2,
+      "summary": "Walk Score 20, 45 nearby trails",
+      "inputs": {
+        "walkScore": 20,
+        "trailCount": 45
+      }
+    },
+    "healthyFood": {
+      "score": 100,
+      "weight": 0.15,
+      "summary": "8 farmers markets, co-ops & health food stores",
+      "inputs": {
+        "venueCount": 8,
+        "population": 72293,
+        "per100k": 11.1
+      }
+    },
+    "movement": {
+      "score": 100,
+      "weight": 0.15,
+      "summary": "12 pilates, yoga, climbing & fitness studios",
+      "inputs": {
+        "venueCount": 12,
+        "population": 72293,
+        "per100k": 16.6
+      }
+    },
+    "recovery": {
+      "score": 100,
+      "weight": 0.15,
+      "summary": "5 sauna, cold plunge & contrast therapy venues",
+      "inputs": {
+        "venueCount": 5,
+        "population": 72293,
+        "per100k": 6.9
+      }
+    },
+    "longevityMedicine": {
+      "score": 41,
+      "weight": 0.1,
+      "summary": "3 functional medicine & longevity clinics",
+      "inputs": {
+        "venueCount": 3,
+        "population": 72293,
+        "per100k": 4.1
+      }
+    }
+  },
+  "venueCounts": {
+    "saunaColdPlunge": 5,
+    "functionalMedicine": 3,
+    "farmersMarkets": 8,
+    "pilatesYoga": 12,
+    "healthFoodStores": 8,
+    "trailsOver2mi": 45
+  },
+  "airQuality": {
+    "annualAQI": 18,
+    "ozoneUnhealthyDays": 0,
+    "pm25Annual": 4.2
+  }
+}

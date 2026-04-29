@@ -1,0 +1,8 @@
+{
+  "slug": "chicago",
+  "fetchedAt": "2026-04-29T22:16:03.849Z",
+  "source": "hardcoded",
+  "annualAQI": 45,
+  "ozoneUnhealthyDays": 22,
+  "pm25Annual": 10.1
+}

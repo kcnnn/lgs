@@ -1,0 +1,8 @@
+{
+  "slug": "san-diego",
+  "fetchedAt": "2026-04-29T22:16:03.848Z",
+  "source": "hardcoded",
+  "annualAQI": 40,
+  "ozoneUnhealthyDays": 22,
+  "pm25Annual": 8.9
+}

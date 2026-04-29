@@ -1,0 +1,8 @@
+{
+  "slug": "miami",
+  "fetchedAt": "2026-04-29T22:16:03.848Z",
+  "source": "hardcoded",
+  "annualAQI": 33,
+  "ozoneUnhealthyDays": 2,
+  "pm25Annual": 7.1
+}
