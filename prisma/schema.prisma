@@ -1,0 +1,95 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  emailVerified DateTime?
+  companyName   String?
+  isAdmin       Boolean   @default(false)
+  credits       Int       @default(0)
+  jobs          Job[]
+  accounts      Account[]
+  sessions      Session[]
+  createdAt     DateTime  @default(now())
+}
+
+model Job {
+  id              String    @id @default(cuid())
+  user            User      @relation(fields: [userId], references: [id])
+  userId          String
+  status          JobStatus @default(AWAITING_PAYMENT)
+  address         String
+  notes           String?
+  photoCount      Int       @default(0)
+  s3Prefix        String
+  webodmTaskId    String?
+  webodmProjectId String?
+  orthoUrl        String?
+  orthoPngUrl     String?
+  dsmUrl          String?
+  traceData       Json?
+  measurements    Json?
+  reportPdfUrl    String?
+  lineItemsCsvUrl String?
+  stripeSessionId String?
+  failureReason   String?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  @@index([userId])
+  @@index([status])
+}
+
+enum JobStatus {
+  AWAITING_PAYMENT
+  AWAITING_UPLOAD
+  PROCESSING
+  READY_TO_TRACE
+  TRACING
+  GENERATING_REPORT
+  DELIVERED
+  FAILED
+}
+
+// Auth.js (NextAuth v5) Prisma adapter models
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
